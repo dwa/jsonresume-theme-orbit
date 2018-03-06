@@ -13,6 +13,13 @@
                 </div><!--//meta-->
                 <div class="details">
                     {{#markdown}}{{summary}}{{/markdown}}
+                        <h4 class="sr-only">Highlights</h4>
+    <ul>
+      {{#each highlights}}
+        <li>{{.}}</li>
+      {{/each}}
+    </ul>
+
                 </div><!--//details-->
             </div><!--//item-->
         {{/resume.work}}
